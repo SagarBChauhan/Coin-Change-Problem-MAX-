@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@android:color/background_light">
+        <EditText
+            android:id="@+id/edTxt_Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Value"
+            android:inputType="number">
+        </EditText>
+        <EditText
+            android:id="@+id/edTxt_Coins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Coins separated by comma(,)">
+        </EditText>
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:background="@drawable/round_btn"
+            android:textColor="@android:color/white">
+        </Button>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_ans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
